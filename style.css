@@ -71,7 +71,7 @@ p { line-height: 1.6; }
 }
 
 /* ----- ESTILOS RESPONSIVE PARA MÓVILES ----- */
-/* Se aplicarán en pantallas de 600px de ancho o menos */
+
 
 @media (max-width: 600px) {
 
@@ -98,7 +98,7 @@ p { line-height: 1.6; }
     font-size: 1em;
   }
   
-  /* --- Transformamos las tablas de contenido en "tarjetas" --- */
+  /* --- Transformamos las tablas en "fichas" verticales (MÉTODO MEJORADO) --- */
   .content-table thead {
     display: none; /* Ocultamos los encabezados originales */
   }
@@ -109,29 +109,28 @@ p { line-height: 1.6; }
   }
 
   .content-table tr {
-    margin-bottom: 15px; /* Separación entre cada "tarjeta" */
+    margin-bottom: 20px; /* Separación entre cada "ficha" */
     border: 1px solid #e1e4e8;
     border-radius: 6px;
+    padding: 5px;
   }
 
   .content-table td {
-    text-align: right; /* Alineamos el contenido a la derecha */
-    padding-left: 50%; /* Dejamos espacio para la etiqueta */
-    position: relative;
-    border-bottom: 1px solid #e1e4e8;
+    text-align: left; /* Alineamos todo el texto a la izquierda */
+    border-bottom: none; /* Quitamos las líneas de borde internas */
+    padding: 10px 15px;
   }
 
-  .content-table td:last-child {
-    border-bottom: none; /* Quitamos la última línea de borde */
-  }
-
+  /* La magia está aquí: la etiqueta ahora es un bloque superior */
   .content-table td::before {
-    content: attr(data-label); /* Usamos el atributo data-label como título */
-    position: absolute;
-    left: 15px;
-    width: calc(50% - 30px);
-    text-align: left;
+    content: attr(data-label);
+    display: block; /* La etiqueta ocupa su propia línea */
     font-weight: 700;
     color: #005a4a;
+    margin-bottom: 5px; /* Pequeño espacio entre etiqueta y contenido */
+  }
+
+  .content-table td[data-label="Enlace"] {
+    text-align: center; /* Centramos solo los botones de enlace */
   }
 }
