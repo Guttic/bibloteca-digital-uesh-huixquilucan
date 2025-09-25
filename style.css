@@ -1,7 +1,7 @@
 /* ----- Paleta de Colores y Estilos Generales ----- */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f0f2f5; /* Un gris muy claro para el fondo */
+  background-color: #f0f2f5;
   color: #333;
   margin: 0;
   padding: 20px;
@@ -18,42 +18,54 @@ body {
 }
 
 /* ----- Estilos del Encabezado ----- */
-.header-table h1 {
-  font-size: 2em;
-  margin: 0;
-  color: #005a4a; /* Verde oscuro del logo */
+.header-table h1 { font-size: 2em; margin: 0; color: #005a4a; }
+.header-table h3 { font-size: 1.2em; margin: 0; font-weight: 400; color: #2c7a6c; }
+
+/* ----- NUEVO: Contenedor de Botones ----- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre botones */
+  margin: 30px 0;
+  flex-wrap: wrap; /* Para que se vea bien en celulares */
 }
-.header-table h3 {
-  font-size: 1.2em;
-  margin: 0;
-  font-weight: 400;
-  color: #2c7a6c; /* Verde más claro */
+
+/* ----- NUEVO: Estilo de los Botones de Carrera ----- */
+.career-button {
+  display: inline-block;
+  background-color: #005a4a; /* Verde oscuro del logo */
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.career-button:hover {
+  background-color: #2c7a6c; /* Verde más claro al pasar el mouse */
+  transform: scale(1.05);
 }
 
 /* ----- Estilos de las Tablas de Contenido ----- */
-.content-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-.content-table th, .content-table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #e1e4e8;
-  text-align: left;
-}
-.content-table th {
-  background-color: #f6f8fa;
-  font-weight: 700;
-}
-.content-table tr:nth-child(even) {
-  background-color: #f6f8fa; /* Efecto "cebra" para fácil lectura */
-}
-.content-table td a img:hover {
-  transform: scale(1.05); /* Efecto al pasar el mouse */
-  transition: transform 0.2s;
-}
+.content-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.content-table th, .content-table td { padding: 12px 15px; border-bottom: 1px solid #e1e4e8; text-align: left; }
+.content-table th { background-color: #f6f8fa; font-weight: 700; }
+.content-table tr:nth-child(even) { background-color: #f6f8fa; }
+.content-table td a img:hover { transform: scale(1.05); transition: transform 0.2s; }
 
 /* ----- Otros Estilos ----- */
-h2, h3 { text-align: center; }
+h2 { text-align: center; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
+h3 { text-align: center; }
 hr { border: 1px solid #e1e4e8; }
 p { line-height: 1.6; }
+
+/* ----- NUEVO: Enlace para volver atrás ----- */
+.back-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #005a4a;
+}
