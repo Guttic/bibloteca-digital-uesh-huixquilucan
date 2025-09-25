@@ -25,7 +25,7 @@
 
 ## 📖 Recursos por Carrera
 
-### 🔵 Ingeniería en Software
+### 🔵 Licenciatura en informatica
 
 | Asignatura | Recurso | Enlace de Acceso |
 | :--- | :--- | :---: |
