@@ -69,3 +69,69 @@ p { line-height: 1.6; }
   text-decoration: none;
   color: #005a4a;
 }
+
+/* ----- ESTILOS RESPONSIVE PARA MÓVILES ----- */
+/* Se aplicarán en pantallas de 600px de ancho o menos */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px; /* Menos padding en el cuerpo */
+  }
+
+  .container {
+    padding: 15px; /* Menos padding en la tarjeta principal */
+  }
+
+  /* --- Reacomodamos el encabezado --- */
+  .header-table td {
+    display: block; /* Hacemos que las celdas se apilen verticalmente */
+    width: 100%;
+    text-align: center !important; /* Forzamos el centrado */
+  }
+
+  .header-table h1 {
+    font-size: 1.5em; /* Títulos más pequeños */
+    margin-top: 10px;
+  }
+  .header-table h3 {
+    font-size: 1em;
+  }
+  
+  /* --- Transformamos las tablas de contenido en "tarjetas" --- */
+  .content-table thead {
+    display: none; /* Ocultamos los encabezados originales */
+  }
+
+  .content-table, .content-table tbody, .content-table tr, .content-table td {
+    display: block; /* Hacemos que todo se comporte como bloques */
+    width: 100%;
+  }
+
+  .content-table tr {
+    margin-bottom: 15px; /* Separación entre cada "tarjeta" */
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+  }
+
+  .content-table td {
+    text-align: right; /* Alineamos el contenido a la derecha */
+    padding-left: 50%; /* Dejamos espacio para la etiqueta */
+    position: relative;
+    border-bottom: 1px solid #e1e4e8;
+  }
+
+  .content-table td:last-child {
+    border-bottom: none; /* Quitamos la última línea de borde */
+  }
+
+  .content-table td::before {
+    content: attr(data-label); /* Usamos el atributo data-label como título */
+    position: absolute;
+    left: 15px;
+    width: calc(50% - 30px);
+    text-align: left;
+    font-weight: 700;
+    color: #005a4a;
+  }
+}
