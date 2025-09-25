@@ -12,9 +12,9 @@
 
 ---
 
-<p align="center">
+<h3 align="center">
   ¡Bienvenidos al repositorio centralizado de recursos académicos de la UESH Huixquilucan!
-</p>
+</h3>
 
 **Nota Importante:** Esta es una colección de enlaces a recursos externos disponibles públicamente en internet. La UESH Huixquilucan no aloja ninguno de estos archivos. El objetivo de este espacio es facilitar el acceso al material de estudio.
 
