@@ -1,17 +1,16 @@
-<div align="center">
+<table>
+<tr>
+  <td width="200" align="center" valign="middle">
+    <img src="https://raw.githubusercontent.com/Guttic/bibloteca-digital-uesh-huixquilucan/refs/heads/main/logo-uesh.png" alt="Logo UESH Huixquilucan" width="150">
+  </td>
+  <td align="left" valign="middle">
+    <h1>📚 Biblioteca Digital de Recursos</h1>
+    <h3>UESH Huixquilucan</h3>
+  </td>
+</tr>
+</table>
 
 ---
-<br>
-
-<img src="https://raw.githubusercontent.com/Guttic/bibloteca-digital-uesh-huixquilucan/refs/heads/main/logo-uesh.png" alt="Logo UESH Huixquilucan" width="200">
-<h1>📚 Biblioteca Digital de Recursos</h1>
-<h3>UESH Huixquilucan</h3>
-
-<br>
-
----
-
-</div>
 
 <p align="center">
   ¡Bienvenidos al repositorio centralizado de recursos académicos de la UESH Huixquilucan!
@@ -25,7 +24,7 @@
 
 ## 📖 Recursos por Carrera
 
-### 🔵 Licenciatura en informatica
+### 🔵 Ingeniería en Software
 
 <table width="90%">
   <thead>
