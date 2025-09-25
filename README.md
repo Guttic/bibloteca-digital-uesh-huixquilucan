@@ -3,7 +3,7 @@
 ---
 <br>
 
-<img src="URL_DE_TU_LOGO_AQUI" alt="Logo UESH Huixquilucan" width="200">
+<img src="https://github.com/Guttic/bibloteca-digital-uesh-huixquilucan/blob/main/logo-uesh.png?raw=true" alt="Logo UESH Huixquilucan" width="200">
 <h1>📚 Biblioteca Digital de Recursos</h1>
 <h3>UESH Huixquilucan</h3>
 
