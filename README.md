@@ -5,7 +5,7 @@
   </td>
   <td align="left" valign="middle">
     <h1>📚 Biblioteca Digital de Recursos</h1>
-    <h3>UESH Huixquilucan</h3>
+    <h2>UESH Huixquilucan</h2>
   </td>
 </tr>
 </table>
@@ -16,7 +16,7 @@
   ¡Bienvenidos al repositorio centralizado de recursos académicos de la UESH Huixquilucan!
 </p>
 
-**Nota Importante:** Esta es una colección de enlaces a recursos externos disponibles públicamente en internet. La UESH Huixquilucan no aloja ninguno de estos archivos. El objetivo de este espacio es facilitar el acceso al material de estudio.
+**Nota Importante:** Esta es una colección de enlaces a recursos externos disponibles públicamente en internet. La UESH Huixquilucan no aloja ninguno de estos archivos. El objetivo de este espacio es facilitar el acceso al material de estudio y de lectura. 
 
 <br>
 
