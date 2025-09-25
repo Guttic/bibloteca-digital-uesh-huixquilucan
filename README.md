@@ -1,4 +1,4 @@
-<table>
+<table width="100%" border="0">
 <tr>
   <td width="200" align="center" valign="middle">
     <img src="https://raw.githubusercontent.com/Guttic/bibloteca-digital-uesh-huixquilucan/refs/heads/main/logo-uesh.png" alt="Logo UESH Huixquilucan" width="150">
@@ -16,7 +16,7 @@
   ¡Bienvenidos al repositorio centralizado de recursos académicos de la UESH Huixquilucan!
 </p>
 
-**Nota Importante:** Esta es una colección de enlaces a recursos externos disponibles públicamente en internet. La UESH Huixquilucan no aloja ninguno de estos archivos. El objetivo de este espacio es facilitar el acceso al material de estudio y de lectura. 
+**Nota Importante:** Esta es una colección de enlaces a recursos externos disponibles públicamente en internet. La UESH Huixquilucan no aloja ninguno de estos archivos. El objetivo de este espacio es facilitar el acceso al material de estudio.
 
 <br>
 
