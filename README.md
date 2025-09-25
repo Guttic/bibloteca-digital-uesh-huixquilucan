@@ -1,7 +1,6 @@
 <div align="center">
   
-  <img src="<img width="704" height="1472" alt="image" src="https://github.com/user-attachments/assets/abc60cfc-d619-4961-90ec-03ef1accb762" />
-" alt="Logo UESH Huixquilucan" width="250">
+  <img src="https://github.com/Guttic/bibloteca-digital-uesh-huixquilucan/blob/main/logo-uesh.png?raw=true" alt="Logo UESH Huixquilucan" width="250">
   <br>
   <h1>📚 Biblioteca Digital de Recursos - UESH Huixquilucan</h1>
 </div>
