@@ -1,7 +1,7 @@
 /* ----- Paleta de Colores y Estilos Generales ----- */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #44DA5F;
+  background-color: #f4f7f6; /* Tono de fondo ligeramente más cálido */
   color: #333;
   margin: 0;
   padding: 20px;
@@ -9,58 +9,99 @@ body {
 
 /* ----- Contenedor Principal ----- */
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border: 1px solid #e1e4e8;
 }
 
 /* ----- Estilos del Encabezado ----- */
-.header-table h1 { font-size: 2em; margin: 0; color: #005a4a; }
-.header-table h3 { font-size: 1.2em; margin: 0; font-weight: 400; color: #2c7a6c; }
-
-/* ----- NUEVO: Contenedor de Botones ----- */
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Espacio entre botones */
-  margin: 30px 0;
-  flex-wrap: wrap; /* Para que se vea bien en celulares */
+.header-table h1 {
+  font-size: 2.2em;
+  margin: 0;
+  color: #004d40; /* Verde principal más oscuro */
+  font-weight: 700;
+}
+.header-table h3 {
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 400;
+  color: #00796b; /* Verde secundario */
 }
 
-/* ----- NUEVO: Estilo de los Botones de Carrera ----- */
+/* ----- ESTILOS MEJORADOS PARA BOTONES DE CARRERA ----- */
+.button-container {
+  text-align: center;
+  margin: 30px 0;
+}
 .career-button {
-  display: inline-block;
-  background-color: #005a4a; /* Verde oscuro del logo */
-  color: #ffffff;
-  padding: 15px 30px;
+  background: linear-gradient(45deg, #00796b, #004d40); /* Gradiente de verdes */
+  color: white;
+  padding: 12px 25px;
+  margin: 5px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.1em;
-  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .career-button:hover {
-  background-color: #2c7a6c; /* Verde más claro al pasar el mouse */
-  transform: scale(1.05);
+  transform: translateY(-3px); /* Efecto de "levantarse" */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 /* ----- Estilos de las Tablas de Contenido ----- */
-.content-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-.content-table th, .content-table td { padding: 12px 15px; border-bottom: 1px solid #e1e4e8; text-align: left; }
-.content-table th { background-color: #f6f8fa; font-weight: 700; }
-.content-table tr:nth-child(even) { background-color: #f6f8fa; }
-.content-table td a img:hover { transform: scale(1.05); transition: transform 0.2s; }
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.content-table th, .content-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e1e4e8;
+  text-align: left;
+  vertical-align: middle;
+}
+.content-table th {
+  background-color: #f9fafb;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #555;
+}
+/* --- EFECTO HOVER PARA LAS FILAS DE LA TABLA --- */
+.content-table tbody tr {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.content-table tbody tr:hover {
+  background-color: #f9fafb; /* Se ilumina la fila al pasar el mouse */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra sutil */
+}
+/* --- NUEVA COLUMNA DE ICONOS --- */
+.icon-cell {
+  font-size: 1.8em; /* Hacemos los iconos más grandes */
+  width: 80px; /* Ancho fijo para la columna */
+}
 
-/* ----- Otros Estilos ----- */
-h2 { text-align: center; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
-h3 { text-align: center; }
-hr { border: 1px solid #e1e4e8; }
+/* ----- Otros Estilos Mejorados ----- */
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #004d40;
+  border-bottom: 2px solid #00796b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
 p { line-height: 1.6; }
+/* Ocultamos los <hr> porque el diseño ya no los necesita */
+hr { display: none; } 
 
-/* ----- NUEVO: Enlace para volver atrás ----- */
+/* ----- Enlace para volver atrás (si lo necesitas en otras páginas) ----- */
 .back-link {
   display: block;
   text-align: center;
@@ -70,67 +111,62 @@ p { line-height: 1.6; }
   color: #005a4a;
 }
 
-/* ----- ESTILOS RESPONSIVE PARA MÓVILES ----- */
-
-
+/* ----- ESTILOS RESPONSIVE PARA MÓVILES (INTACTO Y FUNCIONAL) ----- */
 @media (max-width: 600px) {
 
   body {
-    padding: 10px; /* Menos padding en el cuerpo */
+    padding: 10px;
   }
-
   .container {
-    padding: 15px; /* Menos padding en la tarjeta principal */
+    padding: 15px;
   }
 
   /* --- Reacomodamos el encabezado --- */
   .header-table td {
-    display: block; /* Hacemos que las celdas se apilen verticalmente */
+    display: block;
     width: 100%;
-    text-align: center !important; /* Forzamos el centrado */
+    text-align: center !important;
   }
-
   .header-table h1 {
-    font-size: 1.5em; /* Títulos más pequeños */
+    font-size: 1.5em;
     margin-top: 10px;
   }
   .header-table h3 {
     font-size: 1em;
   }
   
-  /* --- Transformamos las tablas en "fichas" verticales (MÉTODO MEJORADO) --- */
+  /* --- Transformamos las tablas en "fichas" verticales --- */
   .content-table thead {
-    display: none; /* Ocultamos los encabezados originales */
+    display: none;
   }
-
   .content-table, .content-table tbody, .content-table tr, .content-table td {
-    display: block; /* Hacemos que todo se comporte como bloques */
+    display: block;
     width: 100%;
   }
-
   .content-table tr {
-    margin-bottom: 20px; /* Separación entre cada "ficha" */
+    margin-bottom: 20px;
     border: 1px solid #e1e4e8;
     border-radius: 6px;
     padding: 5px;
   }
-
   .content-table td {
-    text-align: left; /* Alineamos todo el texto a la izquierda */
-    border-bottom: none; /* Quitamos las líneas de borde internas */
+    text-align: left;
+    border-bottom: none;
     padding: 10px 15px;
   }
 
   /* La magia está aquí: la etiqueta ahora es un bloque superior */
   .content-table td::before {
     content: attr(data-label);
-    display: block; /* La etiqueta ocupa su propia línea */
+    display: block;
     font-weight: 700;
     color: #005a4a;
-    margin-bottom: 5px; /* Pequeño espacio entre etiqueta y contenido */
+    margin-bottom: 5px;
   }
-
-  .content-table td[data-label="Enlace"] {
-    text-align: center; /* Centramos solo los botones de enlace */
+  
+  /* --- Ajuste para la celda de iconos y enlaces en móvil --- */
+  .content-table td[data-label="Icono"], .content-table td[data-label="Enlace"] {
+    text-align: center;
   }
+  
 }
