@@ -1,7 +1,7 @@
 /* ----- Paleta de Colores y Estilos Generales ----- */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #00796b; /* Tono de fondo ligeramente más cálido */
+  background-color: #f4f7f6;
   color: #333;
   margin: 0;
   padding: 20px;
@@ -9,7 +9,7 @@ body {
 
 /* ----- Contenedor Principal ----- */
 .container {
-  max-width: 950px;
+  max-width: 1100px; /* Un poco más ancho para las tarjetas */
   margin: 0 auto;
   background-color: #ffffff;
   padding: 30px 40px;
@@ -18,245 +18,84 @@ body {
   border: 1px solid #e1e4e8;
 }
 
-/* ----- Estilos del Encabezado ----- */
-.header-table h1 {
-  font-size: 2.2em;
-  margin: 0;
-  color: #004d40; /* Verde principal más oscuro */
-  font-weight: 700;
-}
-.header-table h3 {
-  font-size: 1.3em;
-  margin: 0;
-  font-weight: 400;
-  color: #00796b; /* Verde secundario */
+/* ----- Estilos del Encabezado, Banner y Botones (Sin cambios) ----- */
+.header-table h1 { font-size: 2.2em; margin: 0; color: #004d40; font-weight: 700; }
+.header-table h3 { font-size: 1.3em; margin: 0; font-weight: 400; color: #00796b; }
+.banner-image-container { position: relative; width: 100%; height: 250px; margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.banner-image { width: 100%; height: 100%; object-fit: cover; filter: brightness(60%); }
+.banner-text { position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); color: white; text-align: center; padding: 0 20px; }
+.banner-text h2 { font-size: 2.5em; margin: 0 0 10px 0; color: white; border-bottom: none; padding-bottom: 0; display: block; }
+.banner-text p { font-size: 1.2em; margin: 0; line-height: 1.4; color: #f0f0f0; }
+.intro-description { margin: 30px 0; padding: 0 10px; text-align: center; line-height: 1.7; font-size: 1.1em; color: #555; }
+.intro-description p strong { color: #004d40; }
+.button-container { text-align: center; margin: 30px 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+.career-button { background: linear-gradient(45deg, #00796b, #004d40); color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1em; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-width: 180px; }
+.career-button:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+h2 { text-align: center; font-size: 1.8em; margin-top: 40px; margin-bottom: 25px; color: #004d40; border-bottom: 2px solid #00796b; display: inline-block; padding-bottom: 8px; }
+hr { display: none; }
+.back-link { display: block; text-align: center; margin: 30px 0 10px 0; font-weight: 700; font-size: 1.1em; text-decoration: none; color: #005a4a; transition: color 0.2s; }
+.back-link:hover { color: #00796b; }
+
+/* ----- NUEVO: PARRILLA DE TARJETAS (CARD GRID) ----- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
+  gap: 30px; /* Espacio entre tarjetas */
+  margin-top: 30px;
 }
 
-/* ----- NUEVOS ESTILOS PARA LA IMAGEN DE BANNER Y TEXTO ----- */
-.banner-image-container {
-  position: relative;
-  width: 100%;
-  height: 250px; /* Altura del banner, puedes ajustarla */
-  margin-top: 20px;
-  border-radius: 8px;
-  overflow: hidden; /* Asegura que la imagen no se desborde */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* La imagen cubrirá el contenedor sin distorsionarse */
-  filter: brightness(60%); /* Oscurece un poco la imagen para que el texto resalte */
-}
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  color: white;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.banner-text h2 {
-  font-size: 2.5em; /* Título grande para el banner */
-  margin: 0 0 10px 0;
-  color: white; /* Aseguramos que sea blanco */
-  border-bottom: none; /* Quitamos el borde inferior que tenía h2 */
-  padding-bottom: 0;
-  display: block; /* Para que ocupe todo el ancho */
-}
-
-.banner-text p {
-  font-size: 1.2em;
-  margin: 0;
-  line-height: 1.4;
-  color: #f0f0f0; /* Color de texto ligeramente gris */
-}
-
-/* ----- NUEVO ESTILO PARA LA DESCRIPCIÓN INTRODUCTORIA ----- */
-.intro-description {
-  margin: 30px 0;
-  padding: 0 10px;
-  text-align: justify;
-  line-height: 1.7;
-  font-size: 1.05em;
-  color: #555;
-}
-.intro-description p strong {
-    color: #004d40; /* Destaca la nota importante */
-}
-
-
-/* ----- ESTILOS MEJORADOS PARA BOTONES DE CARRERA ----- */
-.button-container {
-  text-align: center;
-  margin: 30px 0;
-  display: flex; /* Usamos flexbox para una mejor distribución */
-  justify-content: center;
-  flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
-  gap: 15px; /* Espacio entre los botones */
-}
-.career-button {
-  background: linear-gradient(45deg, #00796b, #004d40); /* Gradiente de verdes */
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.1em;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  min-width: 180px; /* Asegura un ancho mínimo para botones */
-}
-.career-button:hover {
-  transform: translateY(-3px); /* Efecto de "levantarse" */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-/* ----- Estilos de las Tablas de Contenido ----- */
-.content-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-.content-table th, .content-table td {
-  padding: 15px;
-  border-bottom: 1px solid #e1e4e8;
-  text-align: left;
-  vertical-align: middle;
-}
-.content-table th {
+/* ----- NUEVO: ESTILO DE CADA TARJETA ----- */
+.card {
   background-color: #f9fafb;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  color: #555;
-}
-/* --- EFECTO HOVER PARA LAS FILAS DE LA TABLA --- */
-.content-table tbody tr {
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-.content-table tbody tr:hover {
-  background-color: #f9fafb; /* Se ilumina la fila al pasar el mouse */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra sutil */
-}
-/* --- COLUMNA DE ICONOS --- */
-.icon-cell {
-  font-size: 1.8em; /* Hacemos los iconos más grandes */
-  width: 80px; /* Ancho fijo para la columna */
-  flex-shrink: 0; /* Evita que se encoja en móvil */
-}
-
-/* ----- Otros Estilos Mejorados ----- */
-h2 {
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 25px;
   text-align: center;
-  font-size: 1.8em;
-  margin-top: 40px;
-  margin-bottom: 25px; /* Más espacio debajo de los títulos de sección */
-  color: #004d40;
-  border-bottom: 2px solid #00796b;
-  display: inline-block;
-  padding-bottom: 8px; /* Más padding para el borde */
-}
-p { line-height: 1.6; }
-/* Ocultamos los <hr> porque el diseño ya no los necesita */
-hr { display: none; } 
-
-/* ----- Enlace para volver atrás (si lo necesitas en otras páginas) ----- */
-.back-link {
-  display: block;
-  text-align: center;
-  margin-top: 30px; /* Más margen arriba */
-  margin-bottom: 20px;
-  font-weight: 700;
   text-decoration: none;
-  color: #005a4a;
-  font-size: 1.1em;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.card:hover {
+  transform: translateY(-8px); /* Efecto de "flotar" al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: #00796b;
+}
+.card-icon {
+  font-size: 3em; /* Iconos grandes */
+  margin-bottom: 15px;
+}
+.card h3 {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  color: #004d40;
+}
+.card p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
 }
 
-/* ----- ESTILOS RESPONSIVE PARA MÓVILES (INTACTO Y FUNCIONAL) ----- */
+/* ----- ESTILOS RESPONSIVE ACTUALIZADOS ----- */
+@media (max-width: 900px) {
+  /* En tablets, pasamos a 2 columnas */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
-
-  body {
-    padding: 10px;
-  }
-  .container {
-    padding: 15px;
-  }
-
-  /* --- Reacomodamos el encabezado --- */
-  .header-table td {
-    display: block;
-    width: 100%;
-    text-align: center !important;
-  }
-  .header-table h1 {
-    font-size: 1.5em;
-    margin-top: 10px;
-  }
-  .header-table h3 {
-    font-size: 1em;
-  }
+  .container { padding: 15px; }
+  .header-table td { display: block; width: 100%; text-align: center !important; }
+  .header-table h1 { font-size: 1.5em; margin-top: 10px; }
+  .banner-image-container { height: 180px; }
+  .banner-text h2 { font-size: 1.8em; }
+  .button-container { flex-direction: column; align-items: center; }
   
-  /* --- Ajuste del banner para móvil --- */
-  .banner-image-container {
-      height: 180px; /* Altura más pequeña en móvil */
-  }
-  .banner-text h2 {
-      font-size: 1.8em; /* Título más pequeño en móvil */
-  }
-  .banner-text p {
-      font-size: 1em; /* Texto más pequeño en móvil */
-  }
-
-  /* --- Ajuste de los botones de carrera para móvil --- */
-  .button-container {
-      flex-direction: column; /* Apilamos los botones verticalmente */
-      align-items: center; /* Centramos los botones */
-  }
-  .career-button {
-      width: 90%; /* Ocupan casi todo el ancho */
-      max-width: 250px; /* Pero con un máximo para que no se vean demasiado grandes */
-  }
-
-  /* --- Transformamos las tablas en "fichas" verticales --- */
-  .content-table thead {
-    display: none;
-  }
-  .content-table, .content-table tbody, .content-table tr, .content-table td {
-    display: block;
-    width: 100%;
-  }
-  .content-table tr {
-    margin-bottom: 20px;
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-    padding: 5px;
-  }
-  .content-table td {
-    text-align: left;
-    border-bottom: none;
-    padding: 10px 15px;
-  }
-
-  /* La magia está aquí: la etiqueta ahora es un bloque superior */
-  .content-table td::before {
-    content: attr(data-label);
-    display: block;
-    font-weight: 700;
-    color: #005a4a;
-    margin-bottom: 5px;
-  }
-  
-  /* --- Ajuste para la celda de iconos y enlaces en móvil --- */
-  .content-table td[data-label="Icono"], .content-table td[data-label="Enlace"] {
-    text-align: center;
-  }
-  .icon-cell {
-      padding-bottom: 0; /* Quitamos padding extra */
-      margin-bottom: -10px; /* Ajuste para que no quede mucho espacio */
+  /* En móviles, pasamos a 1 columna */
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
