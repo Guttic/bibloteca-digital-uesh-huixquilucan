@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4"> </head>
+  <link rel="stylesheet" href="style.css?v=5"> 
+</head>
 <body>
   <div class="container">
 
@@ -22,7 +23,6 @@
         </td>
       </tr>
     </table>
-    <hr>
 
     <div class="banner-image-container">
       <img src="https://umb.edomex.gob.mx/sites/umb.edomex.gob.mx/files/images/Huixquilucan.jpg" alt="Banner de Biblioteca" class="banner-image">
@@ -33,11 +33,9 @@
     </div>
     
     <div class="intro-description">
-      <p>¡Bienvenidos a la Biblioteca Digital de la UESH Huixquilucan! Aquí encontrarás una recopilación curada de enlaces a materiales de estudio, artículos científicos y obras literarias disponibles públicamente en internet. Nuestro objetivo es facilitar el acceso al conocimiento y apoyar tu desarrollo académico y personal.</p>
+      <p>¡Bienvenidos a la Biblioteca Digital de la UESH Huixquilucan! Explora nuestra colección de enlaces a materiales de estudio, artículos científicos y obras literarias disponibles públicamente en internet.</p>
       <p><strong>Nota Importante:</strong> Esta es una colección de enlaces a recursos externos. La UESH Huixquilucan no aloja ninguno de estos archivos. Para sugerir nuevos recursos, por favor abre un "Issue" en este repositorio.</p>
     </div>
-    
-    <hr>
 
     <h2>🧑‍🎓 Recursos por Carrera 🧑‍🎓</h2>
     <div class="button-container">
@@ -47,82 +45,53 @@
     </div>
 
     <h2>📑 Recursos Científicos 📑</h2>
-    <table class="content-table">
-      <thead>
-        <tr>
-          <th align="center">Icono</th>
-          <th>Tipo de Recurso</th>
-          <th>Descripción</th>
-          <th align="center">Enlace</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">🔬</td>
-          <td data-label="Tipo de Recurso"><strong>DOAJ</strong></td>
-          <td data-label="Descripción"><code>Revistas científicas revisadas por pares.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://doaj.org/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">🌎</td>
-          <td data-label="Tipo de Recurso"><strong>Redalyc</strong></td>
-          <td data-label="Descripción"><code>Revistas académicas en español.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://www.redalyc.org/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">🧬</td>
-          <td data-label="Tipo de Recurso"><strong>SciELO</strong></td>
-          <td data-label="Descripción"><code>Revistas científicas iberoamericanas.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://scielo.org/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">📋</td>
-          <td data-label="Tipo de Recurso"><strong>Latindex</strong></td>
-          <td data-label="Descripción"><code>Catálogo de revistas científicas y académicas.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://www.latindex.org/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
+    <div class="card-grid">
+      <a href="https://doaj.org/" class="card">
+        <div class="card-icon">🔬</div>
+        <h3>DOAJ</h3>
+        <p>Revistas científicas de acceso abierto revisadas por pares.</p>
+      </a>
+      <a href="https://www.redalyc.org/" class="card">
+        <div class="card-icon">🌎</div>
+        <h3>Redalyc</h3>
+        <p>Red de Revistas Científicas de América Latina y el Caribe.</p>
+      </a>
+      <a href="https://scielo.org/" class="card">
+        <div class="card-icon">🧬</div>
+        <h3>SciELO</h3>
+        <p>Biblioteca Electrónica Científica en Línea para Iberoamérica.</p>
+      </a>
+      <a href="https://www.latindex.org/" class="card">
+        <div class="card-icon">📋</div>
+        <h3>Latindex</h3>
+        <p>Catálogo de revistas científicas y académicas de la región.</p>
+      </a>
+    </div>
 
     <h2>📚 Recursos Literarios 📚</h2>
-    <table class="content-table">
-      <thead>
-        <tr>
-          <th align="center">Icono</th>
-          <th>Tipo de Recurso</th>
-          <th>Descripción</th>
-          <th align="center">Enlace</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">🇲🇽</td>
-          <td data-label="Tipo de Recurso"><strong>Biblioteca Virtual de México</strong></td>
-          <td data-label="Descripción"><code>Colecciones digitalizadas del patrimonio bibliográfico y documental del país.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://bibliotecavirtualdemexico.cultura.gob.mx/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">📖</td>
-          <td data-label="Tipo de Recurso"><strong>Open Library</strong></td>
-          <td data-label="Descripción"><code>Proyecto que busca crear un catálogo universal de libros y préstamos digitales.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://openlibrary.org/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">✍️</td>
-          <td data-label="Tipo de Recurso"><strong>Biblioteca Virtual Miguel de Cervantes</strong></td>
-          <td data-label="Descripción"><code>Literatura clásica española e hispanoamericana en formato digital.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://www.cervantesvirtual.com/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-        <tr>
-          <td data-label="Icono" align="center" class="icon-cell">📜</td>
-          <td data-label="Tipo de Recurso"><strong>Proyecto Gutemberg</strong></td>
-          <td data-label="Descripción"><code>Biblioteca digital pionera con más de 70,000 títulos de dominio público.</code></td>
-          <td data-label="Enlace" align="center"><a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/Visitar-Sitios-blue?style=for-the-badge&logo=googlechrome"></a></td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
+    <div class="card-grid">
+      <a href="https://bibliotecavirtualdemexico.cultura.gob.mx/" class="card">
+        <div class="card-icon">🇲🇽</div>
+        <h3>Biblioteca Virtual de México</h3>
+        <p>Colecciones digitalizadas del patrimonio bibliográfico y documental del país.</p>
+      </a>
+      <a href="https://openlibrary.org/" class="card">
+        <div class="card-icon">📖</div>
+        <h3>Open Library</h3>
+        <p>Un catálogo universal de libros con millones de préstamos digitales gratuitos.</p>
+      </a>
+      <a href="https://www.cervantesvirtual.com/" class="card">
+        <div class="card-icon">✍️</div>
+        <h3>Biblioteca Virtual Cervantes</h3>
+        <p>Literatura clásica española e hispanoamericana en formato digital y abierto.</p>
+      </a>
+      <a href="https://www.gutenberg.org/" class="card">
+        <div class="card-icon">📜</div>
+        <h3>Proyecto Gutenberg</h3>
+        <p>Biblioteca pionera con más de 70,000 títulos de dominio público para descargar.</p>
+      </a>
+    </div>
+
   </div>
 </body>
 </html>
